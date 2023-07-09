@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu Página de Películas - Película 1</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* Proporción 16:9 (dividir 9 entre 16) */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* Resto de estilos CSS ... */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="Logo.png" alt="CineFlix">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Mi lista</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="movie-details">
+    <div class="movie-info">
+      <h1>Culpa mía</h1>
+      <p>La joven Noah deja todo para mudarse a la mansión de William Leister, el flamante y rico marido de su madre Rafaela. Allí conoce a Nick, su nuevo hermanastro. Ella no tarda en descubrir que, tras la imagen de hijo modelo, Nick oculta algo.</p>
+      <p>Año: 2023</p>
+      <p>Genero: Romance</p>
+      <p>Duración: 1h 48min</p>
+      <p>Director: Domingo González</p>
+      <p>Actores: Gabriel Guevara, Nicole Wallace, Fran Berenguer, Noah Casas</p>
+    </div>
+    <div class="movie-player">
+      <div class="video-wrapper">
+        <iframe src="https://drive.google.com/file/d/1pCzgQvevZ5cihTgwQz6kE8M9tXLcezys/preview" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="related-movies">
+    <h2>Películas relacionadas</h2>
+    <div class="movie-grid">
+      <div class="movie-item">
+        <img src="related-movie1.jpg" alt="Película 1">
+        <div class="movie-overlay">
+          <h3>Película relacionada 1</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="related-movie2.jpg" alt="Película 2">
+        <div class="movie-overlay">
+          <h3>Película relacionada 2</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="related-movie3.jpg" alt="Película 3">
+        <div class="movie-overlay">
+          <h3>Película relacionada 3</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="related-movie4.jpg" alt="Película 4">
+        <div class="movie-overlay">
+          <h3>Película relacionada 4</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Derechos de autor © 2023 - CineFlix</p>
+  </footer>
+</body>
+</html>

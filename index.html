@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu Página de Películas</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos específicos para pantallas pequeñas */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 10px;
+      }
+      
+      nav img {
+        max-width: 100px;
+      }
+      
+      nav ul li {
+        margin-left: 10px;
+      }
+      
+      section {
+        padding: 20px;
+      }
+      
+      #hero {
+        padding: 100px 0;
+      }
+      
+      .hero-content h1 {
+        font-size: 24px;
+      }
+      
+      .hero-content p {
+        font-size: 14px;
+      }
+      
+      .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+      
+      .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      
+      .movie-item {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      .movie-overlay h3 {
+        font-size: 16px;
+      }
+      
+      .btn-watch {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+      
+      footer {
+        padding: 10px;
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="Portadas/Logo/Logo.png" alt="CineFlix">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Mi lista</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Explora un mundo de películas y series</h1>
+      <p>Disfruta de una amplia selección de contenido en streaming.</p>
+      <a href="#content" class="btn">Ver ahora</a>
+    </div>
+  </section>
+
+  <section id="content">
+    <h2>Películas populares</h2>
+    <div class="movie-grid">
+      <div class="movie-item">
+        <img src="Portadas/Spider-Man un Nuevo Universo.jpg" alt="Película 1">
+        <div class="movie-overlay">
+          <h3>Spider-Man un Nuevo Universo</h3>
+          <a href="Spider-Man un Nuevo Universo/reproducion.html" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="Portadas/Culpa mía.jpg" alt="Película 2">
+        <div class="movie-overlay">
+          <h3>Culpa mía</h3>
+          <a href="Culpa mia/reproducion.html" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="Portadas/Elementos.jpg" alt="Película 3">
+        <div class="movie-overlay">
+          <h3>Elementos</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <div class="movie-item">
+        <img src="Portadas/Transformers El despertar de las bestias.jpg" alt="Película 4">
+        <div class="movie-overlay">
+          <h3>Transformers El despertar de las bestias</h3>
+          <a href="#" class="btn-watch">Ver ahora</a>
+        </div>
+      </div>
+      <!-- Agrega más elementos de películas según sea necesario -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Derechos de autor © 2023 - CineFlix</p>
+  </footer>
+</body>
+</html>
